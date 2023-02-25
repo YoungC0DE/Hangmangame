@@ -7,7 +7,7 @@
     <span id="tip" ref="tip">Category: {{ inGame.sorted.tip }}</span>
     <div id="keyword" ref="keyword">{{ inGame.hidden }}</div>
 
-    <section id="keyboard">
+    <section id="keyboard" class="notranslate" translate="no">
       <button
         :class="
           (disabledBtn.find((e) => e == item) == item
@@ -117,8 +117,8 @@ export default {
           this.result = "lose";
           this.gameover = true;
           this.totalLosses += 1;
-          return;
         }
+        return;
       }
 
       this.inGame.hits.push(e);
