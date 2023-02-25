@@ -117,8 +117,7 @@ export default {
     },
   },
   mounted() {
-    this.setSecretWord()
-    console.log(secretWords)
+    this.setSecretWord();
   }
 };
 </script>
