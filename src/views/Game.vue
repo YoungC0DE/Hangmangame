@@ -1,10 +1,10 @@
 <style scoped>
-@import '../assets/Game.css';
+@import "../assets/Game.css";
 </style>
 <template>
 
   <div id='container'>
-    <div id='image' :style='`background-image: url(./src/assets/Images/hangman${inGame.errors}.png)`'></div>
+    <div id='image' :style="`background-image: url(./src/assets/Images/hangman${inGame.errors}.png)`"></div>
     <span id='tip' ref='tip'>Category: {{ inGame.sorted.tip }}</span>
     <div id='keyword' ref='keyword'>{{ inGame.hidden }}</div>
 
@@ -118,6 +118,7 @@ export default {
   },
   mounted() {
     this.setSecretWord()
+    console.log(secretWords)
   }
 };
 </script>
