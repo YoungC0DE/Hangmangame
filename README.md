@@ -15,7 +15,7 @@ Languages and Technologies:
 
 <div align="center">
 
-Click on here: [hangmangame](https://youngc0de.github.io/hangmangame/)
+Click on here: [hangmangame](https://hangmangame-omega.vercel.app/)
 
-<img src="./images/forGit.png" width="300">
+<img src="https://user-images.githubusercontent.com/68437256/221335453-50b4fcd6-ba98-42e4-94d7-278377c2dff9.png" width="500">
 </div>
