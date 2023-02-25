@@ -1,0 +1,163 @@
+#container {
+    background-image: url(@/assets/Images/background.png);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+#image {
+    height: 200px;
+    width: 200px;
+    background-image: url(@/assets/Images/hangman0.png);
+    background-size: cover;
+    transition: 500ms;
+}
+
+#keyword {
+    display: flex;
+    overflow-wrap: anywhere;
+    font-size: 250%;
+    color: white;
+    letter-spacing: 10px;
+    font-family: sans-serif, Arial, Helvetica;
+    height: 20vh;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#keyboard {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.15);
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 5px 20px 5px 20px;
+    border-radius: 8px 8px 8px 8px
+}
+
+#keyboard .btKey, .btKeyDesabled {
+    text-align: center;
+    margin: 4px;
+    font-size: 16pt;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 2px 0px 0px #aaaaaa;
+    background-color: white;
+    cursor: pointer;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+#keyboard .btKey:hover {
+    position: relative;
+    box-shadow: none;
+    box-shadow: none;
+    top: 2px;
+}
+
+.btKeyDesabled {
+    box-shadow: none;
+    cursor: default;
+    background-color: rgb(255 255 255 / 25%);
+}
+
+.hit {
+    background-color: rgba(74, 184, 235, 0.25);
+}
+
+#tip {
+    font-size: 120%;
+    color: white;
+    font-style: italic;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+.endGameContainer {
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top: 0;
+    left: 0;
+    justify-content: center;
+}
+
+.endGameContainer .endGame {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: white;
+    border-radius: 4px;
+    font-family: sans-serif, Arial, Helvetica;
+    color: #444444;
+    font-size: 130%;
+    align-items: center;
+    text-align: center;
+}
+
+.endGameContainer .endGame h2 {
+    font-size: 100%;
+}
+
+.endGameContainer .endGame h2 b {
+    text-transform: uppercase;
+}
+
+.endGame .win, .endGame .lose {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+} 
+
+.endGameContainer button {
+    font-size: 12pt;
+    color: white;
+    height: 50px;
+    width: 40%;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 2px 3px 0px 0px #67747a;
+    background-color: #2d3336;
+    cursor: pointer;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+@media (max-width: 600px) {
+    .endGameContainer .endGame {
+        width: 90%;
+    }
+    .endGame .win, .endGame .lose {
+        height: 150px;
+    }
+    #keyword {
+        text-align: center;
+        height: auto;
+    }
+
+    #keyboard {
+        height: auto;
+        width: 100%;
+        padding: 20px 0 20px 0;
+    }
+}
