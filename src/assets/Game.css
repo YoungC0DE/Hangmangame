@@ -19,31 +19,31 @@
 }
 
 .hang0 {
-  background-image: url(@/assets/Images/hangman0.png);
+  background-image: url(@/assets/Images/hangman0.png) !important;
 }
 
 .hang1 {
-  background-image: url(@/assets/Images/hangman1.png);
+  background-image: url(@/assets/Images/hangman1.png) !important;
 }
 
 .hang2 {
-  background-image: url(@/assets/Images/hangman2.png);
+  background-image: url(@/assets/Images/hangman2.png) !important;
 }
 
 .hang3 {
-  background-image: url(@/assets/Images/hangman3.png);
+  background-image: url(@/assets/Images/hangman3.png) !important;
 }
 
 .hang4 {
-  background-image: url(@/assets/Images/hangman4.png);
+  background-image: url(@/assets/Images/hangman4.png) !important;
 }
 
 .hang5 {
-  background-image: url(@/assets/Images/hangman5.png);
+  background-image: url(@/assets/Images/hangman5.png) !important;
 }
 
 .hang6 {
-  background-image: url(@/assets/Images/hangman6.png);
+  background-image: url(@/assets/Images/hangman6.png) !important;
 }
 
 #keyword {
