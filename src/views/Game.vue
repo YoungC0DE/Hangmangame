@@ -1,5 +1,5 @@
 <style scoped>
-@import './src/assets/Home.css';
+@import '../assets/Game.css';
 </style>
 <template>
 
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import secretWords from './src/assets/secretWords.json';
+import secretWords from '../assets/secretWords.json';
 
 export default {
   data() {
