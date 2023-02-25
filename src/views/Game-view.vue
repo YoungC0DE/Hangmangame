@@ -3,12 +3,7 @@
 </style>
 <template>
   <div id="container">
-    <div
-      id="image"
-      :style="`background-image: url(./src/assets/Images/hangman${
-        inGame.errors ? inGame.errors : 0
-      }.png)`"
-    ></div>
+    <div id="image" :class="'hang' + inGame.errors"></div>
     <span id="tip" ref="tip">Category: {{ inGame.sorted.tip }}</span>
     <div id="keyword" ref="keyword">{{ inGame.hidden }}</div>
 
