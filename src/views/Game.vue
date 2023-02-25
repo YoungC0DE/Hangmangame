@@ -1,44 +1,44 @@
 <style scoped>
-@import "@/assets/Home.css";
+@import './src/assets/Home.css';
 </style>
 <template>
 
-  <div id="container">
-    <div id="image" :style="`background-image: url(src/assets/Images/hangman${inGame.errors}.png)`"></div>
-    <span id="tip" ref="tip">Category: {{ inGame.sorted.tip }}</span>
-    <div id="keyword" ref="keyword">{{ inGame.hidden }}</div>
+  <div id='container'>
+    <div id='image' :style='`background-image: url(./src/assets/Images/hangman${inGame.errors}.png)`'></div>
+    <span id='tip' ref='tip'>Category: {{ inGame.sorted.tip }}</span>
+    <div id='keyword' ref='keyword'>{{ inGame.hidden }}</div>
 
-    <section id="keyboard">
+    <section id='keyboard'>
       <button
         :class="(disabledBtn.find(e => e == item) == item ? 'btKeyDesabled': 'btKey') + ' '
         + (inGame.hits.find(e => e == item) == item ? 'hit': '')"
-        type="button"
-        v-for="(item, index) in keys"
-        :key="index"
-        :id="item"
-        :ref="item"
-        :disabled="disabledBtn.find(e => e == item) == item"
-        v-on:click="gaming(item)"
+        type='button'
+        v-for='(item, index) in keys'
+        :key='index'
+        :id='item'
+        :ref='item'
+        :disabled='disabledBtn.find(e => e == item) == item'
+        v-on:click='gaming(item)'
       >
         {{ item }}
       </button>
     </section>
   </div>
 
-  <div class="endGameContainer" v-show="gameover">
-    <div class="endGame">
-      <div :class="result">
+  <div class='endGameContainer' v-show='gameover'>
+    <div class='endGame'>
+      <div :class='result'>
         <h1>You {{ result == 'win' ? 'win!' : 'lose..'}}</h1>
         <h2>The secret word is: <b> {{ inGame.sorted.name }} </b></h2>
       </div>
-      <button v-on:click="playAgain()">Play Again</button>
+      <button v-on:click='playAgain()'>Play Again</button>
     </div>
   </div>
 
 </template>
 
 <script>
-import secretWords from "@/assets/secretWords.json";
+import secretWords from './src/assets/secretWords.json';
 
 export default {
   data() {
