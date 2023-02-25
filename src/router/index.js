@@ -4,13 +4,13 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      redirect: '/hangmangame'
+      path: "/",
+      redirect: "/hangmangame",
     },
     {
-      path: '/hangmangame',
-      name: 'Game',
-      component: () => import('@/views/Game.vue'),
+      path: "/hangmangame",
+      name: "Game",
+      component: () => import("@/views/Game-view.vue"),
     },
   ],
 });
