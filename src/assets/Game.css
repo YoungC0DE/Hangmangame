@@ -175,6 +175,14 @@
 }
 
 @media (max-width: 600px) {
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
   .endGameContainer .endGame {
     width: 90%;
   }
@@ -191,6 +199,5 @@
     height: auto;
     width: 100%;
     padding: 20px 0 20px 0;
-    margin-top: 5%;
   }
 }
